@@ -1,4 +1,17 @@
-# CoinshiftApp
+# CoinShift App (Angular)
+
+Interfaz de usuario para el conversor de divisas CoinShift. Desarrollada con Angular y servida mediante Nginx en contenedores Docker.
+
+## Ejecución con Docker
+Para levantar el frontend de forma independiente:
+1. `docker build -t coinshift-app .`
+2. `docker run -d -p 4200:80 --name coinshift-app coinshift-app`
+
+## Desarrollo local
+Si deseas correrlo fuera de Docker:
+1. `npm install`
+2. `ng serve`
+3. Abrir en `http://localhost:4200`
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
 
